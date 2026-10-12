@@ -1,20 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Bei x = 1.1 ist 100x^2 + 99 = 220 und 200x = 220. Wenn diese beiden Zahlen subtrahiert werden, bleibt nur noch der Rundungsfehler übrig.
+# = ist ungefähr im Text oben
 def aufgabe_a():
-    plt.grid()
-
-    plt.xlabel("X Achse")
-    plt.ylabel("Y Achse")
-
-    x = np.linspace(0.5, 1.5, 100)
-    f1 = np.sqrt(100*x**2 - 200*x + 99)
-
-    plt.plot(x, f1, label="f1(x)")
-
-    plt.legend()
-    plt.show()
-    # Für werte zwischen 0.9 and 1.1 gibt es Werte von denen man keine sqrt ziehen kann und deshalb ist die Funktion in diesem Bereich nicht definiert
+    x = 1.1
+    left = 100 * x**2 + 99
+    right = 200 * x
+    res = left - right
+    print(left)
+    print(right)
+    print(res)
 
 def aufgabe_b():
     plt.grid()
@@ -24,8 +20,8 @@ def aufgabe_b():
 
     step = 10**-7
     x = np.arange(1.1 + step, 1.3, step)
-    zaehler = 100*x - 200
-    nenner = np.sqrt(100*x**2 - 200*x + 99)
+    zaehler = x * (100*x - 100)
+    nenner = 100*x**2 - 200*x + 99
     f1 = np.abs(zaehler / nenner)
 
     plt.semilogy(x, f1, label="f1(x)")
