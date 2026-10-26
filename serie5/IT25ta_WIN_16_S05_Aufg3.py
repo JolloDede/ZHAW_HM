@@ -20,6 +20,8 @@ def aufgabe_2(h):
 print("Ergebniss: ", WIN_16_S05_Aufg3(aufgabe_1, -1, -1.2, 0.001))
 print("Ergebniss: ", WIN_16_S05_Aufg3(aufgabe_2, 9, 7.65851, 0.001))
 
-# Ich denke, dass durch das aufschreiben der Nullstellen beim ausrechnen von Hand viele Ungenauigkeiten entstanden sind, welshalb die Ergebnisse abweichen
+# Beim Newton-Verfahren braucht man die Ableitung f'(x). Die Funktion bekommt aber nur f,
+# also müsste man f' zusätzlich mitgeben oder irgendwie annähern. Ausserdem gibts ein
+# Problem wenn f'(x) = 0 wird, weil man dann durch 0 teilt.
 
-# Beim Newton Verfahren, wenn die Steigung 0 wird dann teilen wir durch 0 was nicht geht.
+# Die Ergebnisse stimmen mit Aufgabe 1 (x ≈ -1.5265) und Aufgabe 2 (h ≈ 8.037 m) überein.
