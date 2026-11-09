@@ -16,6 +16,7 @@
           # Common packages available in nixpkgs
           numpy
           matplotlib
+          scipy
           # requests
           # pandas
           # flask
