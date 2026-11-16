@@ -1,7 +1,7 @@
 import numpy as np
 
 def FlipRows(A, i):
-    num_rows, _ = A.shape;
+    num_rows, _ = A.shape
     
     for r in range(i, num_rows):
         if (A[r, i] != 0):
@@ -34,7 +34,7 @@ def Name_S06_Aufg2(A, b):
 
     for i in range(n - 1, -1, -1):
         divisor = A[i, i]
-        sum = 0;
+        sum = 0
         for j in range(i + 1, n):
             sum += A[i, j] * x[j]
         x[i] = (A[i, n] - sum) / divisor
