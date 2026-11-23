@@ -30,4 +30,4 @@ plt.grid()
 plt.show()
 
 # Die dx_max Schranke ist um einiges zu gross, sie befindent sich ca. bei 10⁻1, aber dx_obs ist ca. 10⁻4. 
-# Das Verhältnis ist bei ca. 10³, also ist die Schranke ca 100x grösser als sie sein müsste.
+# Das Verhältnis ist bei ca. 10³, also ist die Schranke ca 1000x grösser als sie sein müsste.
